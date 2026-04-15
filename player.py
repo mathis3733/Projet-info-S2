@@ -18,5 +18,12 @@ class Player:
 
     def validate_move(self, move):
         parts = move.strip().split  
+
+        if len(parts) !=2:
+            return False
         
+        origin = parts[0]
+        destination = parts[1]
+
+        if len(origin) < 3 or len(destination) < 3:
             
