@@ -1,6 +1,3 @@
-x = 5
-
-
 class player:
     def __init__(self, name, color):
         self.name = name
