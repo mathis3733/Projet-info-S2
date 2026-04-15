@@ -3,15 +3,20 @@ White = 0
 Black = 1
 
 
-class player:
+class Player:
     def __init__(self, name, color):
         self.name = name
         self.color = color
 
-    def askmove(self):
+    def askMove(self):
         while True:
-            move = input(f"{self.name} ({self.color}), enter your move (e.g. 'e2 e4'): ")
+            move = input(f"{self.name} ({'White' if self.color == White else 'Black'}), enter your move (e.g. 'Nb1 Nc3'): ")
             if self.validate_move(move):
                 return move
             else:
                 print("Invalid move format. Please try again.")
+
+    def validate_move(self, move):
+        parts = move.strip().split  
+        
+            
