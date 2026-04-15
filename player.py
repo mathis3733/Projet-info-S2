@@ -1,8 +1,12 @@
+White = 0
+Black = 1
+
+
 class player:
     def __init__(self, name, color):
         self.name = name
         self.color = color
-    
+        
     def askmove(self):
         while True:
             move = input(f"{self.name} ({self.color}), enter your move (e.g. 'e2 e4'): ")
